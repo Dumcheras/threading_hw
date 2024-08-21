@@ -14,6 +14,7 @@ def func_min(user_list):
 for i in range(5):
     thread_1 = threading.Thread(target=func_max, args=(user_list,))
     thread_1.start()
+print("")
 for i in range(5):
     thread_2 = threading.Thread(target=func_min, args=(user_list,))
     thread_2.start()
